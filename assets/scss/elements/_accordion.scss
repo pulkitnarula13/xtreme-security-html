@@ -1,0 +1,67 @@
+/*-----------------------------
+    Accordion Item
+-----------------------------*/
+.single-accordion-inner {
+    box-shadow: 0px 6px 25px rgba(0,0,0, 0.05);
+    border: 0;
+    margin-bottom: 25px;
+    border-radius: 0;
+    overflow: hidden;
+    .card-header {
+        border: 0;
+        background: transparent;
+        padding: 29px 65px 29px 30px;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        span {
+            font-weight: 700;
+            color: var(--main-color-one);
+        }
+        a {
+            display: block;
+            width: 100%;
+            position: relative;
+            color: var(--main-color-one);
+            &:after {
+                content: '';
+                position: absolute;
+                right: -30px;
+                top: 3px;
+                background-image: url('../../assets/img/2.svg');
+                height: 24px;
+                width: 24px;
+                background-size: cover !important;
+            }
+            &.collapsed {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    right: -30px;
+                    top: 3px;
+                    background-image: url('../../assets/img/1.svg');
+                    height: 24px;
+                    width: 24px;
+                    background-size: cover !important;
+                }
+                &:after {
+                    display: none;
+                }
+            }
+            &.collapsed {
+                color: #0D1422;
+            }
+        }
+    }
+    .card-body {
+        padding: 0 30px 27px 30px;
+    }
+    .collapse {
+        &.show {
+            &:after {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}

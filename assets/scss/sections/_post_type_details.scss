@@ -1,0 +1,126 @@
+//deals-details-item
+.deals-details-item {
+  .thumbnail {
+    margin-bottom: 50px;
+    border-radius: 10px;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+}
+
+//Service Detais Page
+.service-thumb {
+  position: relative;
+  width: 450px !important;
+  height: 450px;
+  background-color: rgba(220, 187, 135, 0.1);
+  border-radius: 50%;
+  z-index: 10;
+  margin: auto;
+  transition: all 0.5s;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-color: rgba(220, 187, 135, 0.15);
+    -webkit-animation: inner-ripple 2000ms linear infinite;
+    -moz-animation: inner-ripple 2000ms linear infinite;
+    animation: inner-ripple 2000ms linear infinite;
+    z-index: -10;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-color: rgba(220, 187, 135, 0.15);
+    -webkit-animation: outer-ripple 2000ms linear infinite;
+    -moz-animation: outer-ripple 2000ms linear infinite;
+    animation: outer-ripple 2000ms linear infinite;
+    z-index: -10;
+  }
+}
+
+
+@keyframes outer-ripple {
+  0% {
+    transform: scale(1);
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+  }
+
+  80% {
+    transform: scale(1.5);
+    filter: alpha(opacity=0);
+    opacity: 0;
+
+  }
+
+  100% {
+    transform: scale(2.5);
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+}
+
+@keyframes inner-ripple {
+  0% {
+    transform: scale(1);
+    filter: alpha(opacity=1);
+    opacity: 1;
+  }
+
+  30% {
+    transform: scale(1);
+    filter: alpha(opacity=1);
+    opacity: 1;
+
+  }
+
+  100% {
+    transform: scale(1.5);
+    filter: alpha(opacity=0);
+    opacity: 0;
+
+  }
+}
+
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes scroll-ver {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}

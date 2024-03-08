@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?7incod');
+    src: url('../fonts/icomoon.eot?7incod#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7incod') format('truetype'),
+    url('../fonts/icomoon.woff?7incod') format('woff'),
+    url('../fonts/icomoon.svg?7incod#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icomoon-"], [class*=" icomoon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icomoon-accordion-minus:before {
+  content: "\e900";
+}
+.icomoon-accordion-plus:before {
+  content: "\e901";
+}
+.icomoon-award-1:before {
+  content: "\e902";
+}
+.icomoon-award-2:before {
+  content: "\e903";
+}
+.icomoon-award-3:before {
+  content: "\e904";
+}
+.icomoon-award-4:before {
+  content: "\e905";
+}
+.icomoon-award-5:before {
+  content: "\e906";
+}
+.icomoon-award-6:before {
+  content: "\e907";
+}
+.icomoon-award--7:before {
+  content: "\e908";
+}
+.icomoon-bag:before {
+  content: "\e909";
+}
+.icomoon-book:before {
+  content: "\e90a";
+  color: #f6f6f6;
+}
+.icomoon-book-2:before {
+  content: "\e90b";
+}
+.icomoon-book-3:before {
+  content: "\e90c";
+}
+.icomoon-building:before {
+  content: "\e90d";
+}
+.icomoon-bullet:before {
+  content: "\e90e";
+}
+.icomoon-bullet-left:before {
+  content: "\e90f";
+}
+.icomoon-calculator:before {
+  content: "\e910";
+}
+.icomoon-chat-quote:before {
+  content: "\e911";
+}
+.icomoon-dimond:before {
+  content: "\e912";
+}
+.icomoon-dot-menu:before {
+  content: "\e913";
+}
+.icomoon-down-arrow:before {
+  content: "\e914";
+  color: #fff;
+}
+.icomoon-flag:before {
+  content: "\e915";
+}
+.icomoon-hand-shake:before {
+  content: "\e916";
+}
+.icomoon-hand-shake-2:before {
+  content: "\e917";
+}
+.icomoon-heart:before {
+  content: "\e918";
+}
+.icomoon-hero-1:before {
+  content: "\e919";
+}
+.icomoon-hero-2 .path1:before {
+  content: "\e91a";
+  color: rgb(186, 17, 17);
+}
+.icomoon-hero-2 .path2:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(186, 17, 17);
+}
+.icomoon-hero-2 .path3:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(186, 17, 17);
+}
+.icomoon-hero-2 .path4:before {
+  content: "\e91d";
+  margin-left: -1em;
+  color: rgb(72, 72, 72);
+}
+.icomoon-hero-2 .path5:before {
+  content: "\e91e";
+  margin-left: -1em;
+  color: rgb(72, 72, 72);
+}
+.icomoon-hero-2 .path6:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(72, 72, 72);
+}
+.icomoon-hero-2 .path7:before {
+  content: "\e920";
+  margin-left: -1em;
+  color: rgb(72, 72, 72);
+}
+.icomoon-hero-2 .path8:before {
+  content: "\e921";
+  margin-left: -1em;
+  color: rgb(72, 72, 72);
+}
+.icomoon-hero-2 .path9:before {
+  content: "\e922";
+  margin-left: -1em;
+  color: rgb(72, 72, 72);
+}
+.icomoon-hero-2 .path10:before {
+  content: "\e923";
+  margin-left: -1em;
+  color: rgb(72, 72, 72);
+}
+.icomoon-hero-2 .path11:before {
+  content: "\e924";
+  margin-left: -1em;
+  color: rgb(72, 72, 72);
+}
+.icomoon-hero-2 .path12:before {
+  content: "\e925";
+  margin-left: -1em;
+  color: rgb(72, 72, 72);
+}
+.icomoon-hero-2 .path13:before {
+  content: "\e926";
+  margin-left: -1em;
+  color: rgb(72, 72, 72);
+}
+.icomoon-hero-2 .path14:before {
+  content: "\e927";
+  margin-left: -1em;
+  color: rgb(72, 72, 72);
+}
+.icomoon-hero-2 .path15:before {
+  content: "\e928";
+  margin-left: -1em;
+  color: rgb(72, 72, 72);
+}
+.icomoon-left-arrow:before {
+  content: "\e929";
+}
+.icomoon-mail:before {
+  content: "\e92a";
+}
+.icomoon-mail-2:before {
+  content: "\e92b";
+}
+.icomoon-map-marker:before {
+  content: "\e92c";
+}
+.icomoon-mapmarker-2 .path1:before {
+  content: "\e92d";
+  color: rgb(186, 17, 17);
+}
+.icomoon-mapmarker-2 .path2:before {
+  content: "\e92e";
+  margin-left: -0.7666015625em;
+  color: rgb(186, 17, 17);
+}
+.icomoon-mapmarker-2 .path3:before {
+  content: "\e92f";
+  margin-left: -0.7666015625em;
+  color: rgb(255, 255, 255);
+}
+.icomoon-map-marker-3:before {
+  content: "\e930";
+}
+.icomoon-menu-dot-2:before {
+  content: "\e931";
+}
+.icomoon-old-man:before {
+  content: "\e932";
+}
+.icomoon-phone:before {
+  content: "\e933";
+}
+.icomoon-phone-2:before {
+  content: "\e934";
+}
+.icomoon-phone-call:before {
+  content: "\e935";
+}
+.icomoon-play-btn:before {
+  content: "\e936";
+}
+.icomoon-plus-sign:before {
+  content: "\e937";
+}
+.icomoon-policeman:before {
+  content: "\e938";
+}
+.icomoon-right-arrow:before {
+  content: "\e939";
+}
+.icomoon-search:before {
+  content: "\e93a";
+}
+.icomoon-share:before {
+  content: "\e93b";
+}
+.icomoon-team:before {
+  content: "\e93c";
+}
+.icomoon-top-right-arrow:before {
+  content: "\e93d";
+}
+.icomoon-trophy:before {
+  content: "\e93e";
+}
+.icomoon-user:before {
+  content: "\e93f";
+}
+.icomoon-user-2:before {
+  content: "\e940";
+}

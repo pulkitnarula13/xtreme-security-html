@@ -1,0 +1,11 @@
+.brand-area-two {
+    padding: 70px 0;
+    .brand-items {
+        width: 100%;
+        display: block;
+        text-align: center;
+        & img{
+            display: inline-block;
+        }
+    }
+}

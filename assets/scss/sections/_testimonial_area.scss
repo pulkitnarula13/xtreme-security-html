@@ -1,0 +1,29 @@
+/*-------------------------
+    Testimonial Area
+--------------------------*/
+
+.testimonial-area {
+    position: relative;
+    z-index: 0;
+    &.bg-image {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &.bg-image-02 {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(11, 11, 32, 0.35);
+            z-index: -1;
+        }
+    }
+}

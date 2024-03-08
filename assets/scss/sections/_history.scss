@@ -1,0 +1,48 @@
+.history-area {
+    padding: 120px 0 0 0;
+}
+.history-wrapper{
+    background: var(--main-color-one);
+    background-image: url('../img/section-img/history/hone.png');
+    box-shadow: -20px 6px 35px 0px rgb(186 17 17 / 39%);
+    border-radius: 6px 6px 6px 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    padding: 130px 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &::before{
+        position: absolute;
+        left: -60px;
+        background-image: url('../img/section-img/history/htwo.png');
+        top: 0;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+}
+.awards-wrapper{
+    display: flex;
+}
+
+.awards-box{
+    margin-right: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed var(--main-color-one);
+    margin-top: 30px;
+    .awards-thumb {
+        margin-bottom: 18px;
+    }
+    .awards-title {
+        font-size: 22px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #2a2a2a;
+        margin-bottom: 16px;
+    }
+}

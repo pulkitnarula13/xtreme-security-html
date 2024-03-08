@@ -1,0 +1,85 @@
+/*-----------------------
+    Error 404 Page
+-----------------------*/
+.error-404{
+    text-align: center;
+    .title{
+        font-size: 40px;
+        line-height: 50px;
+        font-weight:500;
+        margin-bottom: 25px;
+        color: var(--main-color-one);
+    }
+    .subtitle{
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .search-form{
+        position: relative;
+        z-index: 0;
+        margin-top: 36px;
+        .form-control{
+            height: 54px;
+            padding: 0 20px;
+            border-radius: 4px;
+        }
+        .submit-btn{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 70px;
+            text-align: center;
+            padding: 0;
+            height: 55px;
+            background-color: transparent;
+            border: 0;
+            font-size: 25px;
+            color: var(--main-color-one);
+        }
+    }
+}
+
+/*-----------------------
+    No Result
+-----------------------*/
+.no-results.not-found .page-title {
+    font-size: 36px;
+    text-transform: capitalize;
+    line-height: 46px;
+    font-weight: 700;
+}
+
+.no-results.not-found .search-form {
+    position: relative;
+    margin-top: 40px;
+}
+
+.no-results.not-found .search-form .form-control {
+    height: 50px;
+    border: 1px solid #e2e2e2;
+    padding: 0 80px 0 30px;
+    font-size: 14px;
+    border-radius: 30px;
+}
+
+
+.no-results.not-found .search-form .submit-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 50px;
+    background-color: var(--main-color-one);
+    color: #fff;
+    border: 0;
+    font-size: 18px;
+    border-radius: 0 30px 30px 0;
+    padding: 0;
+    text-align: center;
+    transition: .3s ease-in;
+}
+.no-results.not-found .search-form .submit-btn:hover{
+    background-color: var(--main-color-one);
+}

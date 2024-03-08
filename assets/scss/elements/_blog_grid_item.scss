@@ -1,0 +1,102 @@
+/*----------------------------
+    Blog Grid Item
+-----------------------------*/
+.single-blog-item-inner {
+  margin-bottom: 30px;
+  overflow: hidden;
+  .thumb {
+      position: relative;
+      overflow: hidden;
+      border-radius: 6px;
+      img {
+          transform: scale(1.01);
+          transition: 0.7s;
+          width: 100%;
+      }
+      .date {
+          width: 88px;
+          height: 74px;
+          background: var(--main-color-one);
+          font-weight: 700;
+          color: #fff;
+          position: absolute;
+          left: 0;
+          top: 0;
+          padding: 16px;
+      }
+  }
+  .details {
+      padding: 20px 0;
+      padding-bottom: 0;
+      .author-meta {
+          margin: 0;
+          padding: 0;
+          li {
+              display: inline-block;
+              list-style: none !important;
+              width: 49%;
+              font-size: 14px;
+              font-weight: 500;
+              &:before {
+                  display: none;
+              }
+              a {
+                  transition: 0.4s;
+              }
+              a:hover {
+                  color: var(--main-color-one);
+              }
+          }
+          .author {
+              text-transform: uppercase;
+              color: #8E8E8E;
+              i {
+                  font-size: 18px;
+                  margin-right: 10px;
+                  margin-top: 0px;
+                  float: left;
+                  font-weight: 500;
+              }
+          }
+          .date {
+              color: #8E8E8E;
+              text-transform: uppercase;  
+              i {
+                  font-size: 16px;
+                  margin-right: 7px;
+                  margin-top: 0px;
+                  font-weight: 500;
+              }
+          }
+      }
+      .title {
+          margin-top: 0;
+          margin-bottom: 0;
+          transition: 0.4s;
+          font-size: 22px;
+          font-weight: 700;
+          &:hover {
+              color: var(--main-color-one);
+          }
+      }
+      .btn-wrap {
+          margin-top: 21px;
+          .read-btn span {
+              margin-top: 13px;
+          }
+      }
+  }
+  &.border-style-bottom {
+      border-bottom: 1px dashed #CBCBCB;
+      .details {
+          padding-bottom: 25px;
+      }
+  }
+  &:hover {
+      .thumb {
+          img {
+              transform: scale(1.15);
+          }
+      }
+  }
+}

@@ -1,0 +1,78 @@
+//Blog Pagination
+.blog-pagination {
+  display: block;
+  width: 100%;
+  margin-bottom: 120px;
+  ul {
+      li {
+          display: inline-block;
+          padding-left: 0;
+          margin: 0 10px;
+          font-family: var(--body-font);
+          &:first-child {
+              margin-left: 0;
+          }
+          &:last-child {
+              margin-right: 0;
+          }
+          &:before {
+              display: none;
+          }
+          .prev,
+          .next {
+              height: auto;
+              width: auto;
+              border: 0;
+              background: transparent !important;
+              text-transform: uppercase;
+          }
+          .prev:hover,
+          .next:hover {
+              height: auto;
+              width: auto;
+              border: 0;
+              background: transparent !important;
+              color: var(--main-color-one);
+          }
+          a {
+              display: block;
+              border: 1px solid #555555;
+              width: 42px;
+              line-height: 42px;
+              border-radius: 30px;
+              text-align: center;
+              font-weight: 700;
+              -webkit-transition: .3s ease-in;
+              -o-transition: .3s ease-in;
+              transition: .3s ease-in;
+              color: #555555;
+              &:hover {
+                  background-color: var(--main-color-one);
+                  border: 1px solid var(--main-color-one);
+                  color: #fff;
+              }
+          }
+          span {
+              display: block;
+              border: 1px solid #555555;
+              width: 42px;
+              line-height: 42px;
+              border-radius: 50%;
+              text-align: center;
+              font-weight: 700;
+              -webkit-transition: .3s ease-in;
+              -o-transition: .3s ease-in;
+              transition: .3s ease-in;
+              color: #555555;
+          }
+          span.current {
+              background-color: var(--main-color-one);
+              border: 1px solid var(--main-color-one);
+              color: #fff;
+          }
+      }
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+}

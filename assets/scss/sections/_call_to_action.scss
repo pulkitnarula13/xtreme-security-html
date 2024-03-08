@@ -1,0 +1,48 @@
+/*-----------------------------
+    Call To Action Area
+-----------------------------*/
+
+.call-to-action-item {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 0;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 85px;
+    background-color: var(--main-color-one);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0 8px 8px 0;
+  }
+
+  &.bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .content {
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--heading-color);
+    }
+
+    .description {
+      font-weight: 700;
+      font-size: 24px;
+      color: var(--heading-color);
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,190 @@
+.theme-heading-title .smalltitle {
+    font-family: var(--heading-font);
+    color: #484848;
+    margin-top: 18px;
+    margin-bottom: 0;
+    font-family: var(--body-font);
+    font-weight: 700;
+}
+.animate-image-inner-overlay .thumb:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(235, 11, 11, 0.2);
+    margin: 60px 70px;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    border-radius: 6px;
+}
+.animate-image-inner-overlay:hover .thumb .animate-1 {
+    left: 40px;
+    top: 30px;
+}
+.animate-image-inner-overlay .thumb .animate-1 {
+    border-bottom: 3px solid var(--main-color-one);
+    border-right: 3px solid var(--main-color-one);
+    left: 90px;
+    top: 80px;
+}
+.animate-image-inner-overlay:hover .thumb .animate-2 {
+    right: 40px;
+    top: 30px;
+}
+.animate-image-inner-overlay .thumb .animate-2 {
+    border-bottom: 3px solid var(--main-color-one);
+    border-left: 3px solid var(--main-color-one);
+    right: 90px;
+    top: 80px;
+}
+.animate-image-inner-overlay .thumb span {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    z-index: 1;
+}
+.animate-image-inner-overlay:hover .thumb .animate-3 {
+    left: 40px;
+    bottom: 30px;
+}
+.animate-image-inner-overlay .thumb .animate-3 {
+    border-top: 3px solid var(--main-color-one);
+    border-right: 3px solid var(--main-color-one);
+    left: 90px;
+    bottom: 80px;
+}
+.animate-image-inner-overlay:hover .thumb .animate-4 {
+    right: 40px;
+    bottom: 30px;
+}
+.animate-image-inner-overlay .thumb .animate-4 {
+    border-top: 3px solid var(--main-color-one);
+    border-left: 3px solid var(--main-color-one);
+    right: 90px;
+    bottom: 80px;
+}
+.animate-image-inner-overlay .thumb {
+    position: relative;
+}
+.animate-image-inner-overlay:hover .thumb:after {
+    margin: 0;
+}
+.why-para{
+    margin-top: 16px;
+
+}
+
+//list css
+.content-wrapper.content-wrapper-two {
+    .list-item-wrap{
+        padding-top: 10px;
+    }
+}
+.list-item-wrap ul {
+    margin: 0;
+    padding: 0;
+}
+.list-item-wrap ul li {
+    list-style: none !important;
+    position: relative;
+    padding-left: 0 !important;
+    margin-bottom: 12px;
+}
+.list-item-wrap ul li .style-dot {
+    height: 6px;
+    width: 6px;
+    background: var(--main-color-one);
+    border-radius: 50%;
+    margin-top: 9px;
+}
+.list-item-wrap ul li span {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+.style-bar {
+    background: #1E1E1E;
+}
+.list-item-wrap ul li .style-bar {
+    height: 2px;
+    width: 13px;
+    margin-top: 11px;
+    border-radius: 5px;
+    background: var(--main-color-one);
+}
+.list-item-wrap ul li .content {
+    font-weight: 600;
+    color: var(--para-color-two);
+    font-family: var(--body-font);
+}
+.list-item-wrap ul li .detail-content {
+    float: none !important;
+    display: inline !important;
+}
+p.why-para {
+    margin-bottom: 25px;
+}
+.list-item-wrap {
+    width: 50%;
+}
+.animate-image-inner-overlay .thumb {
+   & img{
+    border-radius: 6px;
+    width: 100%;
+   }
+}
+.why-para-two {
+    padding-right: 65px;
+}
+
+//why choose two
+.why-choose-two-area{
+    background-color: #F6F6F6;
+    padding: 120px 0;
+}
+.animate-image-inner {
+    position: relative;
+    .before-text-03 {
+        position: absolute;
+        bottom: 0;
+        right: 45px;
+    }
+}
+.service-inner-wrapper-01{
+    display: flex;
+    border-top: 1px dashed #DFDFDF;
+    padding-top: 40px;
+    margin-bottom: 27px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #DFDFDF;
+    .list-item-wrap{
+        padding-top: 0;
+        width: 100%;
+    }
+}
+.service-left-01 {
+    margin-right: 30px;
+}
+.why-choose-two{
+    padding-bottom: 20px;
+}
+.testimonial-left-side.testimonial-left-side-bg {
+    background: #F9F9F9;
+}
+.content-wrapper {
+    display: flex;
+}
+.list-item-wrap.list-item-wrap-01 {
+    padding-top: 0;
+}
+.why-choose-two-inner {
+    .subtitle.shape {
+        margin-top: -25px;
+    }
+}

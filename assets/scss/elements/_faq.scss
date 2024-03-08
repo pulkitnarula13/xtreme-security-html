@@ -1,0 +1,48 @@
+.faq-area{
+    .faq-experience{
+        padding-top: 10px;
+        & ul{
+            padding: 0;
+            & li{
+                display: flex;
+                align-items: center;
+                list-style: none;
+                background-color: #F6F6F6;
+                padding: 10px;
+                margin-bottom: 15px;
+                & p{
+                    display: inline-block;
+                    margin-bottom: 0;
+                    margin-left: 10px;
+                    color: var( --para-color-two);
+                    & span{
+                        padding-right: 10px;
+                        color: #0D1422;
+                    }
+                }
+            }
+        }
+    }
+    .why-para-faq{
+        border-bottom: 1px dashed #CECECE;
+        padding-bottom: 20px;
+    }
+}
+
+
+.icon.faq-icon {
+    font-size: 25px !important;
+}
+
+.faq-experience ul li i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: var(--main-color-one);
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+

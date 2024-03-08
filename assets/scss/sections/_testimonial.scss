@@ -1,0 +1,14 @@
+.testimonial-area{
+    background-image: url('../img/section-img/testimonial/bg-test.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    padding: 120px 0;
+    position: relative;
+}
+
+
+.testimonial-area.testimonial-area-inner-bg-remove{
+    background-color: #fff;
+    background-image: none;
+}
