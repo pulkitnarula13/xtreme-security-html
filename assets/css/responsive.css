@@ -379,3 +379,38 @@
   }
 }
 
+
+.cities-section {
+  background-color: #FFAC3A;
+  padding: 40px 0;
+}
+
+.container-cities {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.city-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: square;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.city-list li {
+  width: calc(100% / 3); /* Three columns for big screens */
+  margin-bottom: 10px;
+  list-style-type: none;
+  color: black;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .city-list li {
+      width: 100%; /* One column for mobile screens */
+  }
+}
+
