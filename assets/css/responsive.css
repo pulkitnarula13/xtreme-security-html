@@ -194,7 +194,7 @@
   .yamm {
     float: none;
     text-align: left;
-    background-color: rgba(0,0,0,0.95);
+    /* background-color: rgba(0,0,0,0.95); */
   }
   .yamm .nav > li {
     display: block;
@@ -206,6 +206,7 @@
   .header-main__btn {
     float: none;
     display: inline-block;
+    margin-top: 40px;
   }
   .b-type-b__inner {
     padding-left: 0;
