@@ -35,7 +35,7 @@ a,
 .list-widget__link:hover,
 .post-tags___item:hover,
 .entry-footer__link:hover,
-.owl-theme .owl-controls .owl-buttons div:hover i:after {color: #5aaff7;}
+.owl-theme .owl-controls .owl-buttons div:hover i:after {color: #FFAC3A;}
 
 
 .bg-primary,
@@ -54,26 +54,26 @@ a,
 .b-advantages-4__item:nth-child(even),
 .b-pricing_sm .b-pricing__inner,
 .dash_title,
-.b-history-list__btn:hover {background-color: #5aaff7;}
+.b-history-list__btn:hover {background-color: #FFAC3A;}
 
 
 .bg-border,
-.dropcap_primary:first-letter {border-color: #5aaff7;}
+.dropcap_primary:first-letter {border-color: #FFAC3A;}
 
 
 .tooltip-1.top .tooltip-arrow,
 .tooltip-1.top-left .tooltip-arrow,
 .tooltip-1.top-right .tooltip-arrow,
 .border-2-colors,
-.b-contact-banner_mod-a .b-contact-banner__border {border-top-color: #5aaff7;}
+.b-contact-banner_mod-a .b-contact-banner__border {border-top-color: #FFAC3A;}
 
 
-.tooltip-1.right .tooltip-arrow {border-right-color: #5aaff7;}
+.tooltip-1.right .tooltip-arrow {border-right-color: #FFAC3A;}
 
 
 .tooltip-1.left .tooltip-arrow,
 .border-left_primary:before,
-.b-navig-1-list__link:hover {border-left-color: #5aaff7;}
+.b-navig-1-list__link:hover {border-left-color: #FFAC3A;}
 
 
 .pagination > .active > a,
@@ -87,7 +87,7 @@ a,
 .tooltip-1.bottom-right .tooltip-arrow,
 .table_primary > thead > tr > th,
 .border-2-colors,
-.b-contact-banner_mod-a .b-contact-banner__border {border-bottom-color: #5aaff7;}
+.b-contact-banner_mod-a .b-contact-banner__border {border-bottom-color: #FFAC3A;}
 
 
 .color-secondary,
