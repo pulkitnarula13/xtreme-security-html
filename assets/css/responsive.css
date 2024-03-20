@@ -414,3 +414,25 @@
   }
 }
 
+
+
+.footer-image-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center align items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  gap: 50px; /* Gap between items */
+}
+
+.footer-responsive-image {
+  max-width: 40%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) { /* Mobile screens */
+  .footer-image-container {
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center align items vertically */
+  }
+}
+
+
