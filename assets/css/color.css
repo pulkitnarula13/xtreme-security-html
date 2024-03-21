@@ -54,7 +54,11 @@ a,
 .b-advantages-4__item:nth-child(even),
 .b-pricing_sm .b-pricing__inner,
 .dash_title,
-.b-history-list__btn:hover {background-color: #FFAC3A;}
+.b-history-list__btn:hover {
+    /* background-color: #FFAC3A; */
+    background-color: #f8d316;
+    color: black;
+}
 
 
 .bg-border,
