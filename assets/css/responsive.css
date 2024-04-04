@@ -433,6 +433,16 @@
     flex-direction: column; /* Stack images vertically */
     align-items: center; /* Center align items vertically */
   }
+
+  .main-slider__btn{
+    margin-top: 650px;
+  }
+
+  .main-slider__title, .main-slider__info {
+    display: none;
+  }
+
+
 }
 
 
