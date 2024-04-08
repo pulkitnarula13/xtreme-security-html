@@ -391,6 +391,33 @@ if ($('.js-zoom-images').length > 0) {
   }
 
 
+$(document).ready(function(){
+//   // Toggle the menu open/close when the navbar-toggle is clicked
+//   $('.navbar-toggle').on('click', function() {
+//     var collapse = $('#navbar-collapse-1').hasClass('in');
+//     $('.navbar-trigger').toggle(!collapse);
+//     $('.navbar-trigger-close').toggle(collapse);
+//     // This part handles the showing/hiding of the menu.
+//     $('#navbar-collapse-1').toggleClass('in');
+//   });
+
+  // Close the navigation if clicked outside of it
+  $(document).on('click touchstart', function(event) {
+    var $navBar = $(".header-nav"),
+        $navCollapse = $('#navbar-collapse-1'),
+        isOpen = $navCollapse.hasClass('in');
+
+    // If the click is outside the navbar and the navbar is open
+    if (!$navBar.is(event.target) && $navBar.has(event.target).length === 0 && isOpen) {
+      $navCollapse.removeClass('in');
+      $('.navbar-trigger').show();
+      $('.navbar-trigger-close').hide();
+    }
+  });
+});
+
+
+
 
 
 

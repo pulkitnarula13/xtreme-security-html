@@ -446,3 +446,86 @@
 }
 
 
+/* Updated Navigation bar */
+
+/* Base styles for full-screen column layout on mobile */
+.header-main {
+  position: relative; /* Needed for absolute positioning of children */
+}
+
+.navbar-collapse.collapse {
+  display: none; /* Hide by default */
+}
+
+.navbar-collapse.collapse.in {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black; /* Full screen background color */
+  z-index: 9999; /* Ensure it's above other content */
+  overflow-y: auto; /* Allow scrolling for long menus */
+}
+
+.navbar-nav {
+  display: block; /* Stack items vertically */
+  width: 100%;
+  text-align: left; /* Align menu items */
+}
+
+.navbar-nav li {
+  display: block; /* Each item takes full width */
+}
+
+.navbar-nav > li > a {
+  display: block;
+  color: white; /* Text color for visibility */
+  padding: 15px; /* Larger tap area */
+  border-bottom: 1px solid #333; /* Optional: adds a separator between items */
+}
+
+/* Styles for the toggle and close buttons */
+.navbar-trigger, .navbar-trigger-close {
+  display: block;
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+}
+
+.navbar-trigger-close.hidden {
+  display: none;
+}
+
+.navbar-toggle {
+  background-color: transparent;
+  border: none;
+  color: white; /* Adjust based on your color scheme */
+  font-size: 24px; /* Adjust size as needed */
+}
+
+/* Media query adjustments */
+@media (max-width: 768px) {
+  .header-main {
+      padding: 0;
+  }
+  .container {
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+  }
+}
+
+/* Further scrollbar customization if needed */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+
+
+
