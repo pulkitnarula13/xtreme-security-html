@@ -517,13 +517,29 @@
   }
 
   .logo__img {
-    margin-top: -55px;
+    margin-top: -50px;
+    margin-left: 80px;
   }
 
   .header-main__btn {
     margin: 9px 150px 0px 0px;
   }
-}
+
+  .row {
+    margin: 0px 0px;
+  }
+
+  .b-gallery-1__item {
+    width: 90%;
+  }
+
+  /* .social-net {
+    display: none;
+  } */
+
+  .btn-home  {
+    margin-top: 320px;
+  }
 
 /* Further scrollbar customization if needed */
 ::-webkit-scrollbar {
@@ -533,7 +549,319 @@
 ::-webkit-scrollbar-thumb {
   background: #888;
 }
+}
+
+.b-type-e__text, .b-type-e__title {
+  color: black
+}
+
+/* sphere code */
+
+/* .sphere-container {
+  perspective: 1000px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sphere {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear;
+}
+
+.sphere-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  backface-visibility: hidden;
+}
+
+.sphere-face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sphere-face:nth-child(1) { transform: rotateY(0deg) translateZ(100px); }
+.sphere-face:nth-child(2) { transform: rotateY(60deg) translateZ(100px); }
+.sphere-face:nth-child(3) { transform: rotateY(120deg) translateZ(100px); }
+.sphere-face:nth-child(4) { transform: rotateY(180deg) translateZ(100px); }
+.sphere-face:nth-child(5) { transform: rotateY(240deg) translateZ(100px); }
+.sphere-face:nth-child(6) { transform: rotateY(300deg) translateZ(100px); }
+
+@keyframes rotate {
+  from {
+      transform: rotateY(0deg);
+  }
+  to {
+      transform: rotateY(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .sphere {
+      width: 350px;
+      height: 350px;
+  }
+} */
+
+
+/* Dual image */
+
+.dual-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.dual-image-wrapper {
+  flex: 1 1 45%;
+  max-width: 45%;
+  margin: 10px;
+}
+
+.dual-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .dual-image-wrapper {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+
+  .dual-image-wrapper img {
+    width: 100%;
+  }
+}
 
 
 
+.slider {
+  width: 100%;
+  height: 400px; /* Full height */
+  position: relative;
+  overflow: hidden;
+}
 
+.slides {
+  display: flex;
+  width: calc(150% + 20px); /* 100% for each slide + 5px gap between each slide */
+  height: 100%;
+  animation: slide 20s infinite linear;
+}
+
+.slide {
+  width: calc(100% / 4); /* Each slide takes 1/4th of the total width */
+  height: 100%;
+  flex-shrink: 0;
+  position: relative;
+  margin-right: 5px; /* Gap between slides */
+}
+
+.slide:last-child {
+  margin-right: 0; /* No gap after the last slide */
+}
+
+.slide img {
+  width: 400px;
+  object-fit: fill;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-100% - 20px)); } /* Slide all images with the gap */
+}
+
+/* Hide arrows on Home Page Slides */
+.sp-arrows {
+  display: none !important;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+
+  .section-default {
+    padding-top: 0px !important;
+  }
+
+  .slider {
+    height: 200px;
+  }
+  .slide img {
+    width: 150px;
+  }
+  .slides {
+      animation: slideMobile 20s infinite linear;
+  }
+}
+
+@keyframes slideMobile {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-100% - 20px)); } /* Slide all images with the gap */
+}
+
+
+.footer__contact {
+  text-align: left;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+/* Scrolling left */
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Scrolling left half*/
+@keyframes scroll-left-half {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* Home Construction scroll */
+
+
+/* Home Construction scroll - Infinite Looping Effect */
+.construction-slider {
+  overflow-x: hidden;
+  scrollbar-width: none;
+  position: relative;
+  width: 100%;
+  overscroll-behavior-x: none;
+  pointer-events: none;
+}
+
+.construction-slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.slider-track {
+  display: flex;
+  animation: scroll-left-half-loop 40s linear infinite;
+  width: max-content;
+   pointer-events: auto; /* Allow interaction with slider contents if needed */
+
+}
+
+.slider-track img {
+  width: 240px;
+  height: auto;
+  margin-right: 80px;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 3px solid #e4c93d;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  padding: 6px;
+}
+
+/* Duplicated track to ensure seamless loop */
+@keyframes scroll-left-loop {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+/* retail scroll */
+
+.retail-scroll-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 20px;
+  border: 2px solid #e4c93d;
+  border-radius: 10px;
+}
+
+.retail-scroll-track {
+  display: flex;
+  animation: scroll-left 30s linear infinite;
+}
+
+.retail-scroll-track img {
+  height: 280px;
+  margin-right: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+.home-logo-img {
+        width: 300px;
+        height: 300px;
+    }
+
+/* Fixation for Mobile Devices */
+
+@media only screen and (max-width: 768px) {
+      .logo__img {
+        margin-left: 0px;
+    }
+
+
+    .header-main__btn {
+        margin: 50px 130px 0px 0px;
+        /* display: none; */
+    }
+
+    .askbutton_home {
+        margin: 250px 150px 0px 0px;
+    }
+
+    .askbutton_down {
+        margin: 50px 130px 0px 0px;
+    }
+
+    .callbutton_home {
+      display: none;
+    }
+
+    .home-logo-img {
+        width: 200px;
+        height: auto;
+
+        margin-top: 2%;
+        margin-left: 50%;
+    }
+}
